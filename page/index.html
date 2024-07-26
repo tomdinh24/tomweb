@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <!-- Include Intro Section -->
+    <div id="intro-section"></div>
+
+    <!-- Include About Section -->
+    <div id="about-section"></div>
+
+    <!-- Include Work Experience Section -->
+    <div id="work-experience-section"></div>
+
+    <!-- Include Footer -->
+    <div id="footer-section"></div>
+
+    <script>
+        async function loadSection(sectionId, filePath) {
+            const response = await fetch(filePath);
+            const text = await response.text();
+            document.getElementById(sectionId).innerHTML = text;
+        }
+
+        loadSection('intro-section', '../components/intro.html');
+        loadSection('about-section', '../components/about.html');
+        loadSection('work-experience-section', '../components/work-experience.html');
+        loadSection('footer-section', '../components/footer.html');
+    </script>
+</body>
+
+</html>
