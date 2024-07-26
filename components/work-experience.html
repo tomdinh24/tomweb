@@ -4,21 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Webpage</title>
+    <title>Work Experience</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
-    <!-- Intro Section -->
-    <div id="intro-section">
-        <h1>Tom Lam</h1>
-        <p>Aspiring Software Engineer and Content Creator</p>
-        <img src="image/profile.png" alt="Profile">
-    </div>
-
-    <!-- Work Experience Section -->
     <div class="work-experience-section">
         <h1>Work Experience</h1>
         <div class="timeline">
@@ -32,7 +24,7 @@
                         <p>Workflows AI · Internship</p>
                         <span>Berkeley, California, United States</span>
                     </div>
-                    <img src="image/workflow.jpeg" alt="Workflow AI">
+                    <img src="/image/workflow.jpeg" alt="Workflow AI">
                 </div>
                 <p>Strategize and Operate Multi Agent System (MAS) at scale.</p>
             </div>
@@ -46,7 +38,7 @@
                         <p>Stealth Startup · Self-employed</p>
                         <span>Berkeley, California, United States</span>
                     </div>
-                    <img src="image/stealth.jpeg" alt="Stealth Startup">
+                    <img src="/image/stealth.jpeg" alt="Stealth Startup">
                 </div>
             </div>
             <div class="timeline-circle"></div>
@@ -59,7 +51,7 @@
                         <p>Berkeley Summer Community</p>
                         <span>Berkeley, California, United States</span>
                     </div>
-                    <img src="image/bsc.png" alt="Berkeley Summer Community">
+                    <img src="/image/bsc.png" alt="Berkeley Summer Community">
                 </div>
                 <p>BSC is a Berkeley student community that hosts fun events/hangouts over the summer with over 320 signups and 240 members in the community discord channel.</p>
             </div>
@@ -73,7 +65,7 @@
                         <p>AI Entrepreneurs at Berkeley</p>
                         <span>Berkeley, California, United States</span>
                     </div>
-                    <img src="image/aieb.jpeg" alt="AI Entrepreneurs at Berkeley">
+                    <img src="/image/aieb.jpeg" alt="AI Entrepreneurs at Berkeley">
                 </div>
                 <p>A premier AI incubator for early-stage startups and a community of risk-takers, researchers, and investor partners.</p>
             </div>
@@ -87,33 +79,12 @@
                         <p>Tech2Table</p>
                         <span>Berkeley, California, United States</span>
                     </div>
-                    <img src="image/t2t.jpeg" alt="Tech2Table">
+                    <img src="/image/t2t.jpeg" alt="Tech2Table">
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Include About Section -->
-    <div id="about-section"></div>
-
-    <!-- Include Footer -->
-    <div id="footer-section"></div>
-
-    <script>
-        async function loadSection(sectionId, filePath) {
-            const response = await fetch(filePath);
-            const text = await response.text();
-            document.getElementById(sectionId).innerHTML = text;
-        }
-
-        loadSection('about-section', 'components/about.html');
-        loadSection('footer-section', 'components/footer.html');
-    </script>
 </body>
 
 </html>
 
-    <div class="button-container">
-        <a href="https://docs.google.com/document/d/1z1JloBe-1Ac_S1pbr43nMTTvrGMc9uuDGhSZmzl0BTw/edit?usp=sharing" target="_blank" class="glass-button">View My Resume</a>
-    </div>
-</div>
